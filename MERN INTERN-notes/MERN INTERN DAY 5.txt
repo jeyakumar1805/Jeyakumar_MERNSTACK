@@ -1,0 +1,61 @@
+NOTES:
+-Spread Operator: 
+example:
+ const arr1 = [1,2,3]
+ const arr2 = [4,5,6]
+ const combinearr = [...arr1, ...arr2] // three dots are known as spread operator
+
+
+
+PRACTICE:
+
+
+
+Parent component:
+
+import React,{useState} from 'react'
+import { Child1 } from './child1'
+ 
+export const Parent1 = () => {
+
+    const parent_message = "Hello from parent";
+    const [ child_message, setChildMessage] = useState('hai');
+
+    const datafromchildd = (message) => {
+        setChildMessage(message);
+    }
+ 
+  return (
+    <div>
+        <h1>Parent component</h1>
+        <p>Data from Parent: {parent_message}</p>
+        <p>Data from Child: {child_message}</p>
+        <Child1 msg={parent_message} data_for_parent_from_child = {datafromchildd} />
+        
+    </div>
+  )
+}
+
+
+Child component:
+
+import React,{useState} from 'react'
+
+export const Child1 = (props, data_for_parent_from_child) => {
+
+    const [child_message, setChildMessage] = useState("Hello from Child");
+
+    const send_message = () => {
+        props.datatoparent(child_message);
+
+    }
+
+  return (
+    <div>
+        <h1>Child component</h1>
+        <p>Data from Parent: {props.msg}</p>
+        <button onClick={send_message}>Send Data to Parent</button>
+    </div>
+  )
+}
+

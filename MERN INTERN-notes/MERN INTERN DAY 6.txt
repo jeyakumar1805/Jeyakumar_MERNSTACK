@@ -1,0 +1,9 @@
+NOTES:
+-useEffect: Upon the condition or action we apply in our functional components monitoring the impact or side effects can be done using useEffect hook
+
+
+PRACTICE:
+
+two arguments that accepts
+callbackfunc(constructor in java)
+dependency array((set interval)

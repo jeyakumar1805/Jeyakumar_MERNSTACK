@@ -1,0 +1,32 @@
+NOTES:
+useReducer: The useReducer Hook is the better alternative to the useState hook and is generally more preferred over the useState hook when you have complex state-building logic or when the next state value depends upon its previous value or when the components are needed to be optimized.
+
+Step1: create inc or dec program using usestate
+
+step2: replace usestate with use reducer 
+
+point 1: usereducer takes 2 arguments, first is reducerfunction which says what u want to do(like inc or dec)
+point 2: returns an array with 2 values. 1st is current value and displatch function
+	we call them as state and dispatch. here state will hold initial value and updated once u call dispatch, it will trigger reducerfunction 
+
+REDUX: 
+
+Installation of redux: npm i @reduxjs/toolkit react-redux
+- reduxjs/toolkit is a redux library and react-redux is a package that connects react components with redux.
+
+ROUTER ARCHITECTURE:
+
+router
+routes
+route
+
+route
+routes
+router
+
+
+createSlice:
+Explanation: userInfo is the key for reducers and userReducer is the name we give for reducer actions we get from userSlicer.js
+
+-useSelector hook: to access data from redux
+-state is a callback function

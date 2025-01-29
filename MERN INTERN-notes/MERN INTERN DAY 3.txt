@@ -1,0 +1,51 @@
+PRACTICE:
+1. Write promise called "Andra-BP"
+Andra to A - 5000ms
+Andra to B - 2000ms
+Andra to C - 1000ms
+
+NOTES:
+-ReactJS: Its a library or framework of js. 
+Example websites For ReactJS: Netflix, amazon
+Example websites for HTML: Youtube, Wikipedia
+
+-npm(node package manager)
+
+URL PATHS:
+DAY3_REACT: C:\Users\eisha\OneDrive\Desktop\javascript\DAY_3_REACT>
+
+
+COMMANDS:
+1. To find a version of node: node -v
+2. 
+
+
+
+REACT FOLDERS: public, src
+REACT IMP FILES: index.html, index.js, index.css
+NOTE: AS of now don't touch index files.
+      Initially write or practice code in App.js
+
+REACT-DOM(Document Object Model):  React follows VDOM, here unlike html once DOM gets created, the changes or manipulation what we do gets completed and only that part will be re-rendered. Whereas in html every time we make change entire DOM will be re-rendered.
+
+In web applications created by reactjs each and everything is called as component.
+Types of components:
+1.Functional component
+2.Class component
+
+-JSX: writing html inside js
+
+
+RUNNING REACT APPLICATION:
+1. create new folder
+2.do the following commands in terminal: 
+	npx create-react-app demo
+	npm install
+	npm install web-vitals
+	npm start
+3.To run Router, Routes, Route(Navigation):
+	npm install react-router-dom
+
+4. Import Routers, useStates:
+	import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+	import React, {useState} from "react";

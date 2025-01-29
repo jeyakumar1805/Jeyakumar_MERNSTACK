@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Bakery</title>
+    <style>
+        /* CSS Basics */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #ff9f9f;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background: #ff6f6f;
+            color: white;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+        nav a:hover {
+            background: white;
+            color: #ff6f6f;
+            border-radius: 5px;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        .menu-items {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .menu-item {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #fff7f7;
+            text-align: center;
+        }
+        .menu-item img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        form label {
+            display: block;
+            margin-top: 10px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background: #ff6f6f;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background: #ff9f9f;
+        }
+        footer {
+            background-color: #ff6f6f;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        /* Box Model */
+        .box {
+            margin: 10px auto;
+            padding: 15px;
+            border: 2px solid #ccc;
+            max-width: 600px;
+            text-align: center;
+        }
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .menu-items {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sweet Bakery</h1>
+        <p>Your one-stop shop for delicious treats!</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Sweet Bakery</h2>
+            <p>We bake happiness every day with our fresh and sweet treats!</p>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Sweet Bakery is a family-owned business specializing in handmade baked goods. From cupcakes to artisan bread, we have something for everyone!</p>
+        </section>
+
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="1.jpeg" alt="Chocolate Cake" height="300px" width="300px">
+                    <h3>Chocolate Cake</h3>
+                    <p>Rich, moist, and heavenly chocolate cake.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="2.jpeg" alt="Croissant" height="300px" width="300px">
+                    <h3>Butter Croissant</h3>
+                    <p>Flaky, buttery, and freshly baked.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="3.jpeg" alt="Cupcakes" height="300px" width="300px">
+                    <h3>Assorted Cupcakes</h3>
+                    <p>A delightful assortment of our finest cupcakes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="/submit" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sweet Bakery. All rights reserved.</p>
+    </footer>
+</body>
+</html>

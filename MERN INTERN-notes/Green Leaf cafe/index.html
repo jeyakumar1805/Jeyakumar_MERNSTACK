@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Green Leaf Cafe</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #3e8c3e;
+        }
+        p {
+            color: #555;
+        }
+        a {
+            text-decoration: none;
+            color: #3e8c3e;
+        }
+
+        /* Header Section */
+        header {
+            background: #3e8c3e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #2d6c2d;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            font-size: 16px;
+            padding: 5px 10px;
+        }
+        nav a:hover {
+            background: white;
+            color: #3e8c3e;
+            border-radius: 5px;
+        }
+
+        .hero h2 {
+            font-size: 28px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        /* Menu Section */
+        .menu {
+            padding: 20px;
+            background: #e8f5e8;
+        }
+        .menu table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .menu th, .menu td {
+            border: 1px solid #ddd;
+            text-align: center;
+            padding: 10px;
+        }
+        .menu th {
+            background: #3e8c3e;
+            color: white;
+        }
+
+        /* About Us Section */
+        .about {
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .about img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+        .about-text {
+            flex: 1;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 20px;
+            background: #dff0d8;
+        }
+        .contact-form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background: #3e8c3e;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .contact-form button:hover {
+            background: #2d6c2d;
+        }
+
+        /* Footer Section */
+        footer {
+            background: #2d6c2d;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .about {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>The Green Leaf Cafe</h1>
+        <p>Where Nature Meets Coffee</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <img src="4.png" alt="home image" height="300px" width="1300px">
+        <h2>Welcome to The Green Leaf Cafe, your eco-friendly spot for organic brews.</h2>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Organic Coffee</td>
+                    <td>Rich, aromatic coffee brewed from organic beans.</td>
+                </tr>
+                <tr>
+                    <td>Herbal Tea</td>
+                    <td>A soothing blend of herbs and spices.</td>
+                </tr>
+                <tr>
+                    <td>Vegan Snacks</td>
+                    <td>Healthy, plant-based treats for every palate.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <img src="4.png" alt="Green Leaf Cafe Interior">
+        <div class="about-text">
+            <h2>About Us</h2>
+            <p>The Green Leaf Cafe is dedicated to providing eco-friendly and sustainable food and beverages. We believe in supporting the environment while serving the best quality organic coffee and snacks.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="/submit" method="post" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>123 Green St, Eco City, USA | Phone: +1 (555) 123-4567</p>
+        <p>&copy; 2025 The Green Leaf Cafe. Follow us on 
+            <a href="#">Facebook</a>, <a href="#">Twitter</a>, <a href="#">Instagram</a>.
+        </p>
+    </footer>
+
+</body>
+</html>

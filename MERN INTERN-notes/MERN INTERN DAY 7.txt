@@ -1,0 +1,16 @@
+NOTES:
+-props can be passed between components only by following the hierarchy 
+
+useContext hook: If we want to use state from one component to another only way to achieve is passing it as props in the key. This is not efficient, to make it efficient we have an exclusive hook called useContext
+
+createContext:
+
+useEffect: synchronising a component with, after our action monitoring our 
+
+
+PRACTICE:
+-lets say we have 5 components, c1,c2,c3,c4,c5
+
+
+Words:
+deportation

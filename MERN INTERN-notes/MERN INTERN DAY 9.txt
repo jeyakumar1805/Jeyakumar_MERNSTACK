@@ -1,0 +1,49 @@
+BOOTSTRAP:
+
+MONGODB:
+-it is no sql inorder to process unstructured data such as json file/data
+-json will look like javascript object
+-compass helps to fetch data from mango db server means compass helps u to reach mongodb server.. like its client
+
+MONGOSH: 
+-mongoshell was replaced with mongosh.
+
+DATA MODELLING:
+-2 terms: 1. data modelling
+	  2. schema
+
+example: name, id, password
+
+Schema: it is actual blueprint of db what you created by fixing the format using data modelling.
+example: name, id, password
+
+SQL    - RECORD
+MONGO  - DOCUMENT
+
+SQL    - TABLE
+MONGO  - COLLECTION
+
+COLLECTIONS ARE STORED IN DB 
+MONGO WILL HAVE MULTIPLE DB
+
+-NOTE: 
+Install mongosh
+type in browser mongo shell download
+
+How to create DB in MONGO:
+
+1. cmd: create db
+2. cmd: use emppersonal
+3. create collection under above db
+cmd: db.createCollection("emp")
+4. db.emp.insertOne({name:"jesus"})
+
+PRACTISE:
+create db with name: computers
+collection name: laptops
+documents field: name,model,colour,status,price,
+		One more object inside that: name: vendor, inside that, vname,vprice
+In status - available,not available
+Insert 10 rescords
+
+q1. list out particular laptop. Change it status to unavailable is it is available and vice versa.

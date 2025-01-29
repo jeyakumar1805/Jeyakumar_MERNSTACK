@@ -1,0 +1,74 @@
+GITHUB: 
+create folder: 6jan2025(example folder name)
+   sub-folders:
+	- content(class notes)
+	- hands-on(assignments, projects, etc)
+
+HOMEWORK:
+1. read tailwind css
+
+
+NOTES:
+- ES6(advanced feature of JavaScript, also known as ECMA script)
+	arrow function- we can create functions without name,
+to call the function: document.getElementById("response").innerHTML = howareyou()
+example:
+
+<script>
+const howareyou = () => {  // javascript variable
+return 100;
+};
+document.getElementById("response").innerHTML = howareyou();
+(object)  (method)                  (property)
+</script>
+
+-arrays: push(), pop(), shift()->removes first element, unshift()->add element at first
+	splice(start number, deletecount, item)-> deletes "deletecount" numbers from "start number" and replace with the value "item".
+
+-OOPS(Object Oriented Programming Structure)
+example:Birds(class)
+	Peacock, pigeon, sparrow(objects)
+	color, size, height, weight(properties)
+	behaviors like flying, eating, barking(methods)
+
+Object-Inbuild: keys, value, entries
+
+-promise(javascript object): 
+* there are 2 states of promises: resolved(success), rejected(failure)
+example:
+    <script>
+        const tatkal = new Promise((resolve,reject)=>{
+            let ticket = true
+            if(ticket){
+                resolve();
+            }
+            else{
+                reject();
+            }
+        })
+
+        tatkal.then(success)
+        .catch(failure)
+
+        function success(){
+            console.log("Ticket booked successfully");
+        }
+        function failure(){
+            console.log("Ticket not booked");
+        }
+
+    </script>
+
+Build-in promise methods:
+	1.Promine.all() - rejects when one promise gets failure
+	2.Promise.allSettled() - show results of all promises inside array
+	3.Promise.any() - fulfils when any of promise gets fulfilled, rejects when all promises reject(checks only true)
+	4.Promise.race() - Promise.race() Method resolves or rejects as soon as the first promise settles
+
+
+API: let's say we create a webpage, in that we want to add whether status. Somebody has that whether data, i want to use it in our website. We can use that using API's
+
+
+PRACTICE:
+1. design a simple calculator by getting 2 numbers as input, display addition, sub, product, quotient, remainder by creating individual arrow functions for the same
+2. create an array by taking array size and array elements from the user, extract all the perfect numbers and even prime numbers

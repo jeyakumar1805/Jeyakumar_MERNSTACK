@@ -1,0 +1,83 @@
+Node is backend library from js. In node we can use express.js as middleware
+
+require from node js- helps to include modules in our code
+below example of custom modules
+
+const http = require("https") // build in modules
+const express = require('express') // third-party module
+const sayHello = require('./greet') // custom module
+
+NOTES:
+- Node.js => runtime environment that allows you to run JavaScript on the server-side
+- Maintain split terminals in vs code inorder to use client and server 
+- Run command: always start the server first.. cmd: node server.js
+		cmd to run client: npm start
+- Install express library: npm i express
+- server always responds as json file
+- Keyword to activate the port: listen
+- we can delete package.json, and to get it back the cmd: npm init -y
+
+CODE:
+//require is a keyword from node.js that allows us to use modules in our code
+const express = require('express');
+
+// create an instance of an express application
+// used for routing, middleware, etc. to keep things organized and routing clean
+const app = express();
+
+//define the port number the server will listen on
+const port = 3005;
+
+//define a route for the HTTP GET request to the root  URL ('/')
+//req is the request object, res is the response object
+app.get('/',(req,res)=>{
+    //req belongs to client
+    //res belongs to server
+    res.send("Hello, this msg from Node.js ");
+});
+
+//start the server and listen on the specified port
+//callback function is executed when the server starts listening
+app.listen(port,()=>{
+    console.log(`Node.js server is running at http://localhost:${port}`);
+});
+
+NOTES:
+Axios is a popular JS library used to make HTTP requests from the browser or Node.js (server).
+Axios is known for its easy, clean syntax and flexibility. It especially works well with APIs and rest APIs.
+When we write API for exclusive purpose we call it as rest API
+
+cmd to install axios: npm i axios
+
+-Cors: (cross-origin resource sharing)
+when a web  page request information from resource[from other sites] whether to accept the request and process it or not will be defined in the rule book. FOr this purpose we use cors
+
+cmd to install cors: npm i cors
+
+EXAMPLE CODE:
+//require is a keyword from node.js that allows us to use modules in our code
+const express = require('express');
+//import the custom module
+const greet = require('../src/greeting');
+// create an instance of an express application
+// used for routing, middleware, etc. to keep things organized and routing clean
+const app = express();
+//define the port number the server will listen on
+const port = 3002;
+//define a route for the HTTP GET request to the root  URL ('/')
+//req is the request object, res is the response object
+app.get('/',(req,res)=>{
+    res.send('Hello, World!');
+});
+
+app.get('/greet',(req,res)=>{
+    greet();
+    res.send('Hello, check the server console from greeting message!');
+});
+
+//start the server and listen on the specified port
+//callback function is executed when the server starts listening
+app.listen(port,()=>{
+    
+    console.log(`Node.js server is running at http://localhost:${port}`);
+});

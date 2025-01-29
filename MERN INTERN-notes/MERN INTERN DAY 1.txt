@@ -1,0 +1,36 @@
+HOMEWORK:
+1. complete three assignments given.
+	-HTML tags, Tailwind CSS
+	* why console? what is the importance 
+
+NOTES:
+1. JS can be used as client side and server side.
+2. JavaScript is a powerful language used in a framework equivalent to C.
+3. ReactJS and angularJS are popular frameworks or libraries of JS.
+4. JavaScript and Python are both scripting languages.
+
+Do example program for each of the following:
+1. Simple if
+2. if-else
+3. else if
+4. else if ladder
+5. nested if
+
+QUESTION:
+CASE 1: number of lemons in hand = 7 
+expected output:
+GOD 1: 7 offered
+GOD 2: need 7
+GOD 3: need 7
+shortage : 14
+
+CASE 2: number of lemons in hand = 21
+expected output: 
+GOD 1: 7 offered
+GOD 2: 7 offered
+GOD 3:7 offered
+sufficient
+
+QUESTION:
+Sam is having 75 candies. he gives half of it to his friend Angel. Since Angel. Cal loves Sam a lot she gives back half of her portion. Calculate and display how many candies do angel and sam having.
+Constraints: Use one variable, Use functions

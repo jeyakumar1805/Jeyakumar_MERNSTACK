@@ -1,0 +1,24 @@
+NOTES:
+PROPS & STATES:
+* every component will have props and states
+PROPS: It won't change. Ex: name, like tata. bislery
+STATES: It changes or we can change it. Ex: water lvl in bottle(initial state full, updated state half, current state empty)
+
+STATE:
+
+* In class component, we can change the state
+*Earlier in IT industry they were using class component, in recent days the state component is not available with functional components. HOOKS is used to implement state in functional components
+
+HOOKS: Implementation of state
+	-useState
+	-useRef
+	-useEffect
+example of useState: Counterclock, stating the initial state as zero we can increment, decrement it using useState Hook
+
+
+PRACTICE:
+1. Flipkart website: 
+	Homepage: Grocery, Mobile, Fashion
+		Mobiles: Component name: mobiles
+			 Props: name, version, price, age
+			 State: discount
